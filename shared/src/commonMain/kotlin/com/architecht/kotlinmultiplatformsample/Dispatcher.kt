@@ -1,0 +1,5 @@
+package com.architecht.kotlinmultiplatformsample
+
+import kotlinx.coroutines.CoroutineDispatcher
+
+internal expect val ApplicationDispatcher: CoroutineDispatcher

@@ -1,0 +1,30 @@
+CREATE TABLE member (
+  key INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+  id INTEGER NOT NULL,
+  login TEXT NOT NULL,
+  avatarUrl TEXT NOT NULL
+);
+
+insertItem:
+INSERT OR REPLACE INTO member (id, login, avatarUrl) VALUES (?, ?, ?);
+
+selectAll:
+SELECT * FROM member ORDER BY key;
+
+deleteAll:
+DELETE FROM member;
+
+selectOneOfById:
+SELECT * FROM member WHERE id = ?;
+
+CREATE TABLE user(
+id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+name TEXT NOT NULL,
+last_name TEXT NOT NULL
+);
+
+insertUser:
+INSERT OR REPLACE INTO user (name, last_name) VALUES (?, ?);
+
+selectAllUser:
+SELECT * FROM user ORDER BY id;
