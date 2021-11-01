@@ -10,6 +10,7 @@ import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.architecht.kotlinmultiplatformsample.repository.DatabaseDriverFactory
 import com.architecht.kotlinmultiplatformsample.repository.MembersRepository
+import com.architecht.kotlinmultiplatformsample.storage.KeyValueStorageFactory
 import kotlinx.android.synthetic.main.fragment_sql.view.*
 
 class SqlFragment : Fragment() {
@@ -55,6 +56,16 @@ class SqlFragment : Fragment() {
         val users = db.selectAllUsers()
         usersAdapter.users = users
         usersAdapter.notifyDataSetChanged()
+
+        // val test = KeyValueStorage(context!!)
+        // test.set(23)
+
+        val storage = KeyValueStorageFactory(activity!!)
+        val driver = storage.createDriver()
+        driver.putDouble("key123", 1234.23)
+        driver.getBooleanOrNull("test")
+
+        Log.d("TEST", "" + driver.getDoubleOrNull("key123").toString())
     }
 
     companion object {

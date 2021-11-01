@@ -66,7 +66,7 @@ class ApiFragment : Fragment() {
 
     fun fetchCoins() {
         val api = CoinstatsAPI()
-        /*
+
         api.fetchCoins(success = {
             print("COINS " + it.coins.toString())
             activity?.runOnUiThread {
@@ -76,7 +76,5 @@ class ApiFragment : Fragment() {
         }, failure = {
             print("FAILURE " + it.toString())
         })
-
-         */
     }
 }

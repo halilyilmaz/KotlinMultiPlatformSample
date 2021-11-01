@@ -7,11 +7,14 @@ plugins {
     kotlin("plugin.serialization")
 }
 
-
 object SqlDelight {
     const val runtime = "com.squareup.sqldelight:runtime:1.5.0"
     const val android = "com.squareup.sqldelight:android-driver:1.5.0"
     const val native = "com.squareup.sqldelight:native-driver:1.5.0"
+}
+
+object KeyValueStorage {
+    const val common = "com.russhwolf:multiplatform-settings:0.8.1"
 }
 
 object Ktor {
@@ -69,6 +72,7 @@ kotlin {
             }
         }
     }
+
     sourceSets {
         val commonMain by getting {
             dependencies {
@@ -79,9 +83,7 @@ kotlin {
                 implementation(Ktor.Core.common)
                 implementation(Ktor.Json.common)
                 implementation(Ktor.Serialization.common)
-                // implementation("com.russhwolf:multiplatform-settings:0.8.1")
-                // implementation("dev.icerock.moko:mvvm:0.11.0")
-                // implementation(Coroutine.runtime)
+                implementation(KeyValueStorage.common)
             }
         }
 
@@ -92,8 +94,6 @@ kotlin {
                 implementation(Ktor.Core.jvm)
                 implementation(Ktor.Json.jvm)
                 implementation(Ktor.Serialization.jvm)
-                // implementation("androidx.lifecycle:lifecycle-extensions:0.11.0")
-                // implementation(Coroutine.android)
             }
         }
 

@@ -12,6 +12,7 @@ dependencies {
     implementation("com.squareup.picasso:picasso:2.8")
     implementation("androidx.legacy:legacy-support-v4:1.0.0")
     implementation("androidx.core:core-ktx:1.6.0")
+    implementation("com.russhwolf:multiplatform-settings:0.8.1}")
 }
 
 android {

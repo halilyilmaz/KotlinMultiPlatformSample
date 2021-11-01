@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,19 @@
 		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
 		FA7CAA82271ADCEE00DCC56A /* commonMain in Resources */ = {isa = PBXBuildFile; fileRef = FA7CAA80271ADCEE00DCC56A /* commonMain */; };
 		FA7CAA83271ADCEE00DCC56A /* iosMain in Resources */ = {isa = PBXBuildFile; fileRef = FA7CAA81271ADCEE00DCC56A /* iosMain */; };
+		FA8D5759272DC3BA00FD2E8D /* shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8D5758272DC3BA00FD2E8D /* shared.framework */; };
+		FA8D575A272DC3BA00FD2E8D /* shared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA8D5758272DC3BA00FD2E8D /* shared.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FA8D575D272DC5E400FD2E8D /* BaseTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D575C272DC5E400FD2E8D /* BaseTabView.swift */; };
+		FA8D575F272DC70800FD2E8D /* ApiSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D575E272DC70800FD2E8D /* ApiSampleView.swift */; };
+		FA8D5762272E68E300FD2E8D /* Coin+iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D5761272E68E300FD2E8D /* Coin+iOSApp.swift */; };
+		FA8D5765272E690700FD2E8D /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D5764272E690700FD2E8D /* CoinRowView.swift */; };
+		FA8D5768272E69A300FD2E8D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FA8D5767272E69A300FD2E8D /* Kingfisher */; };
+		FA8D576A272E6D0000FD2E8D /* KotlinDouble+iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D5769272E6D0000FD2E8D /* KotlinDouble+iOSApp.swift */; };
+		FA8D576C272E6DAB00FD2E8D /* SQLiteSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D576B272E6DAB00FD2E8D /* SQLiteSampleView.swift */; };
+		FA8D576E272F283A00FD2E8D /* UserRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D576D272F283A00FD2E8D /* UserRowView.swift */; };
+		FA8D5770272F2B2000FD2E8D /* UserDefaultSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D576F272F2B2000FD2E8D /* UserDefaultSampleView.swift */; };
+		FA8D5772272F2D0E00FD2E8D /* View+iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D5771272F2D0E00FD2E8D /* View+iOSApp.swift */; };
+		FA8D5774272F2D2100FD2E8D /* User+iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8D5773272F2D2100FD2E8D /* User+iOSApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -20,6 +33,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				FA8D575A272DC3BA00FD2E8D /* shared.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -33,6 +47,17 @@
 		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA7CAA80271ADCEE00DCC56A /* commonMain */ = {isa = PBXFileReference; lastKnownFileType = folder; name = commonMain; path = ../shared/src/commonMain; sourceTree = "<group>"; };
 		FA7CAA81271ADCEE00DCC56A /* iosMain */ = {isa = PBXFileReference; lastKnownFileType = folder; name = iosMain; path = ../shared/src/iosMain; sourceTree = "<group>"; };
+		FA8D5758272DC3BA00FD2E8D /* shared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = shared.framework; path = "../shared/build/xcode-frameworks/Debug/iphonesimulator14.2/shared.framework"; sourceTree = "<group>"; };
+		FA8D575C272DC5E400FD2E8D /* BaseTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabView.swift; sourceTree = "<group>"; };
+		FA8D575E272DC70800FD2E8D /* ApiSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiSampleView.swift; sourceTree = "<group>"; };
+		FA8D5761272E68E300FD2E8D /* Coin+iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coin+iOSApp.swift"; sourceTree = "<group>"; };
+		FA8D5764272E690700FD2E8D /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
+		FA8D5769272E6D0000FD2E8D /* KotlinDouble+iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KotlinDouble+iOSApp.swift"; sourceTree = "<group>"; };
+		FA8D576B272E6DAB00FD2E8D /* SQLiteSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteSampleView.swift; sourceTree = "<group>"; };
+		FA8D576D272F283A00FD2E8D /* UserRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRowView.swift; sourceTree = "<group>"; };
+		FA8D576F272F2B2000FD2E8D /* UserDefaultSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultSampleView.swift; sourceTree = "<group>"; };
+		FA8D5771272F2D0E00FD2E8D /* View+iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+iOSApp.swift"; sourceTree = "<group>"; };
+		FA8D5773272F2D2100FD2E8D /* User+iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+iOSApp.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA8D5768272E69A300FD2E8D /* Kingfisher in Frameworks */,
+				FA8D5759272DC3BA00FD2E8D /* shared.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +94,9 @@
 		7555FF7D242A565900829871 /* iosApp */ = {
 			isa = PBXGroup;
 			children = (
+				FA8D5763272E690000FD2E8D /* Components */,
+				FA8D5760272E68D100FD2E8D /* Extensions */,
+				FA8D575B272DC5DC00FD2E8D /* Scene */,
 				7555FF82242A565900829871 /* ContentView.swift */,
 				7555FF8C242A565B00829871 /* Info.plist */,
 				2152FB032600AC8F00CF470E /* iOSApp.swift */,
@@ -77,6 +107,7 @@
 		7555FFB0242A642200829871 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA8D5758272DC3BA00FD2E8D /* shared.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -88,6 +119,37 @@
 				FA7CAA81271ADCEE00DCC56A /* iosMain */,
 			);
 			name = Kotlin;
+			sourceTree = "<group>";
+		};
+		FA8D575B272DC5DC00FD2E8D /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				FA8D575C272DC5E400FD2E8D /* BaseTabView.swift */,
+				FA8D575E272DC70800FD2E8D /* ApiSampleView.swift */,
+				FA8D576B272E6DAB00FD2E8D /* SQLiteSampleView.swift */,
+				FA8D576F272F2B2000FD2E8D /* UserDefaultSampleView.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		FA8D5760272E68D100FD2E8D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FA8D5761272E68E300FD2E8D /* Coin+iOSApp.swift */,
+				FA8D5769272E6D0000FD2E8D /* KotlinDouble+iOSApp.swift */,
+				FA8D5771272F2D0E00FD2E8D /* View+iOSApp.swift */,
+				FA8D5773272F2D2100FD2E8D /* User+iOSApp.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FA8D5763272E690000FD2E8D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FA8D5764272E690700FD2E8D /* CoinRowView.swift */,
+				FA8D576D272F283A00FD2E8D /* UserRowView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,6 +170,9 @@
 			dependencies = (
 			);
 			name = iosApp;
+			packageProductDependencies = (
+				FA8D5767272E69A300FD2E8D /* Kingfisher */,
+			);
 			productName = iosApp;
 			productReference = 7555FF7B242A565900829871 /* iosApp.app */;
 			productType = "com.apple.product-type.application";
@@ -136,6 +201,9 @@
 				Base,
 			);
 			mainGroup = 7555FF72242A565900829871;
+			packageReferences = (
+				FA8D5766272E69A300FD2E8D /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 7555FF7C242A565900829871 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -182,8 +250,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA8D576C272E6DAB00FD2E8D /* SQLiteSampleView.swift in Sources */,
+				FA8D576E272F283A00FD2E8D /* UserRowView.swift in Sources */,
+				FA8D5774272F2D2100FD2E8D /* User+iOSApp.swift in Sources */,
+				FA8D5765272E690700FD2E8D /* CoinRowView.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
+				FA8D5762272E68E300FD2E8D /* Coin+iOSApp.swift in Sources */,
+				FA8D575F272DC70800FD2E8D /* ApiSampleView.swift in Sources */,
+				FA8D5772272F2D0E00FD2E8D /* View+iOSApp.swift in Sources */,
+				FA8D576A272E6D0000FD2E8D /* KotlinDouble+iOSApp.swift in Sources */,
+				FA8D575D272DC5E400FD2E8D /* BaseTabView.swift in Sources */,
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,
+				FA8D5770272F2B2000FD2E8D /* UserDefaultSampleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,7 +390,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_PREVIEWS = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../shared/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/../shared/build/xcode-frameworks/$(CONFIGURATION)/$(SDK_NAME)",
+					"$(SRCROOT)/../shared/build/xcode-frameworks",
+				);
 				INFOPLIST_FILE = iosApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -376,6 +457,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA8D5766272E69A300FD2E8D /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA8D5767272E69A300FD2E8D /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA8D5766272E69A300FD2E8D /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7555FF73242A565900829871 /* Project object */;
 }

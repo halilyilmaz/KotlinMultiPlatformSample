@@ -5,6 +5,7 @@ struct ContentView: View {
     let greet = Greeting().greeting()
     let db = MembersRepository(databaseDriverFactory: DatabaseDriverFactory())
     let coinstatsAPI = CoinstatsAPI()
+    // let storage = SettingConfig(settings: <#T##Multiplatform_settingsSettings#>, key: <#T##String#>, defaultValue: <#T##_?#>)
     
     var body: some View {
         VStack {
@@ -51,6 +52,41 @@ struct ContentView: View {
             }, label: {
                 Text("USER INSERT")
             })
+            
+            Button(action: {
+            /*
+                let keyValue = KeyValueStorage()
+                let factory = KeyValueStorageFactory()
+                let driver = factory.createDriver()
+                driver.putString(key: "Test", value: "TES1234")
+                
+                print("VAL : \(driver.getStringOrNull(key: "Test"))")
+                // let sample = Sample()
+                // sample.test(parameter: 22)
+                
+                // let val = sample.getTest()
+                // print("VAL \(val?.intValue)")
+                */
+                
+                let keyValueStorage = KeyValueStorageFactory().createDriver()
+                keyValueStorage.putString(key: "key_123", value: "1234")
+                let value = keyValueStorage.getStringOrNull(key: "key_123")
+                print("VALUE \(value)")
+                
+                let sampleEnum = SampleEnum.all
+                switch sampleEnum {
+                case .all: break
+                case .favorites: break
+                default:
+                    break
+                }
+                
+                let genericBaseModel = GenericBaseModel<Test>(data: nil, exception: nil, empty: false, loading: false)
+                
+                
+            }, label: {
+                Text("Storage")
+            })
         }
     }
 }
@@ -59,4 +95,15 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
+}
+
+class Test {
+    
+}
+
+class SampleImplemented: SampleInterface {
+    func foo() {
+        
+    }
+    
 }

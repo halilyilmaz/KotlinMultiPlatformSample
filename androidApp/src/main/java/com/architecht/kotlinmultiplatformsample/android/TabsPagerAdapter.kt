@@ -12,7 +12,6 @@ class TabsPagerAdapter(fm: FragmentManager, lifecycle: Lifecycle, private var nu
         when (position) {
             0 -> {
                 val bundle = Bundle()
-                bundle.putString("fragmentName", "API")
                 val apiFragment = ApiFragment()
                 apiFragment.arguments = bundle
                 return apiFragment
@@ -20,18 +19,16 @@ class TabsPagerAdapter(fm: FragmentManager, lifecycle: Lifecycle, private var nu
 
             1 -> {
                 val bundle = Bundle()
-                bundle.putString("fragmentName", "SqlDelight")
-                val apiFragment = SqlFragment()
-                apiFragment.arguments = bundle
-                return apiFragment
+                val sqlFragment = SqlFragment()
+                sqlFragment.arguments = bundle
+                return sqlFragment
             }
 
             2 -> {
                 val bundle = Bundle()
-                bundle.putString("fragmentName", "SharedPref")
-                val apiFragment = ApiFragment()
-                apiFragment.arguments = bundle
-                return apiFragment
+                val keyStorageFragment = KeyValueStorageFragment()
+                keyStorageFragment.arguments = bundle
+                return keyStorageFragment
             }
             else -> return ApiFragment()
         }
